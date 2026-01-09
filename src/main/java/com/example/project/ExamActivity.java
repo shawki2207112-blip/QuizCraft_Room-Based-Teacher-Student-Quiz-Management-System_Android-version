@@ -119,6 +119,12 @@ public class ExamActivity extends AppCompatActivity {
                 score++;
             }
         }
+        if (selectedId == -1) {
+            Toast.makeText(this,
+                    "Please select an option before continuing",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         index++;
         loadQuestion();
